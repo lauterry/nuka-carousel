@@ -34,3 +34,6 @@ dist
 /src/scripts/main.js
 /es
 /lib
+
+.idea/
+npm-debug.log
