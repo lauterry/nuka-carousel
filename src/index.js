@@ -657,8 +657,8 @@ const Carousel = createReactClass({
 			: this.getTweeningValue('left');
 		return React.Children.map(children, (child, index) => {
 			let classname = "slider-slide";
-			const isLeftslide = self.state.currentSlide === index + 1 || self.state.currentSlide === 0 && index === children.length - 1;
-			const isRightSlide =  self.state.currentSlide === index - 1 || self.state.currentSlide === children.length -1 && index === 0;
+			const isLeftslide = this.state.currentSlide === index + 1 || this.state.currentSlide === 0 && index === children.length - 1;
+			const isRightSlide =  this.state.currentSlide === index - 1 || this.state.currentSlide === children.length -1 && index === 0;
 
 			if (self.state.currentSlide === index) {
 				classname = "slider-slide slider-slide-active";
