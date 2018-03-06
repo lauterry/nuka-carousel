@@ -660,11 +660,11 @@ const Carousel = createReactClass({
 			const isLeftslide = this.state.currentSlide === index + 1 || this.state.currentSlide === 0 && index === children.length - 1;
 			const isRightSlide =  this.state.currentSlide === index - 1 || this.state.currentSlide === children.length -1 && index === 0;
 
-			if (self.state.currentSlide === index) {
+			if (this.state.currentSlide === index) {
 				classname = "slider-slide slider-slide-active";
-			} else if (self.props.slidesToShow === 3 && isLeftslide) {
+			} else if (this.props.slidesToShow === 3 && isLeftslide) {
 				classname = "slider-slide slider-slide-left";
-			} else if (self.props.slidesToShow === 3 && isRightSlide) {
+			} else if (this.props.slidesToShow === 3 && isRightSlide) {
 				classname = "slider-slide slider-slide-right";
 			}
 
