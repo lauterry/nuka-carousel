@@ -33,5 +33,5 @@ bower_components/
 dist
 /src/scripts/main.js
 /es
-/lib
+#/lib
 .idea/
